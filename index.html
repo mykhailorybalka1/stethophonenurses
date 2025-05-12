@@ -94,7 +94,7 @@
     /* Hero Section */
     .hero {
       background: linear-gradient(120deg, #F5F7FA 0%, #FFF1F2 100%);
-      padding: 60px 0;
+      padding: 40px 0; /* Reduced padding */
       overflow: hidden;
       position: relative;
     }
@@ -166,7 +166,7 @@
     
     /* Features Section */
     .features {
-      padding: 60px 0;
+      padding: 40px 0; /* Reduced padding */
       background-color: var(--white);
     }
     
@@ -174,7 +174,7 @@
       font-size: 2rem;
       font-weight: 700;
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 30px; /* Reduced margin */
       color: var(--secondary);
     }
     
@@ -227,11 +227,11 @@
     /* How It Works */
     .how-it-works {
       background-color: var(--tertiary);
-      padding: 60px 0;
+      padding: 40px 0; /* Reduced padding */
     }
     
     .steps {
-      margin-bottom: 40px;
+      margin-bottom: 30px; /* Reduced margin */
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
@@ -303,7 +303,7 @@
     /* Testimonials */
     .testimonials {
       background-color: var(--white);
-      padding: 60px 0;
+      padding: 40px 0; /* Reduced padding */
     }
     
     .testimonial-container {
@@ -346,6 +346,8 @@
     .testimonial-img {
       flex: 1;
       max-width: 450px;
+      max-height: 400px; /* Added max-height to constrain the image */
+      object-fit: cover; /* Ensures the image maintains aspect ratio */
       border-radius: 16px;
       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
       transition: transform 0.5s ease;
@@ -358,7 +360,7 @@
     /* CTA Section */
     .cta {
       background: linear-gradient(120deg, #F5F7FA 0%, #FFF1F2 100%);
-      padding: 60px 0;
+      padding: 40px 0; /* Reduced padding */
       text-align: center;
     }
     
@@ -399,14 +401,14 @@
     footer {
       background-color: var(--secondary);
       color: var(--white);
-      padding: 50px 0 30px;
+      padding: 40px 0 20px; /* Reduced padding */
     }
     
     .footer-grid {
       display: grid;
       grid-template-columns: 2fr 1fr 1fr;
       gap: 40px;
-      margin-bottom: 40px;
+      margin-bottom: 30px; /* Reduced margin */
     }
     
     .footer-logo {
@@ -539,6 +541,12 @@
       
       .testimonial-container {
         flex-direction: column-reverse;
+      }
+
+      .testimonial-img {
+        width: 100%;
+        max-width: 350px; /* Adjusted for mobile */
+        margin: 0 auto;
       }
       
       .footer-grid {
@@ -717,6 +725,7 @@
           </div>
           <a href="https://apps.apple.com/ca/app/stethophone/id6736364676" class="cta-button" style="margin-top: 24px;">Try It In Your Practice</a>
         </div>
+        <!-- Optimized image with proper sizing constraints -->
         <img src="https://raw.githubusercontent.com/mykhailorybalka1/images/main/all.png" alt="Healthcare professionals with Stethophone" class="testimonial-img reveal" />
       </div>
     </div>
